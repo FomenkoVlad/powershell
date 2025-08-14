@@ -1,4 +1,4 @@
-$ip = "192.168.1.10"
+$ip = "10.10.10.10"
 
 # Resolve IP to DNS hostname
 try {
@@ -28,3 +28,4 @@ if ($result) {
 } else {
     Write-Host "No AD computer object found for ${hostname} (resolved from $ip)."
 }
+
