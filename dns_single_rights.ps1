@@ -1,4 +1,4 @@
-$hostname = "azwu-c-app-452.azure.uk.centricaplc.com"
+$hostname = "computer.domain.dnshostname"
 
 $searcher = New-Object DirectoryServices.DirectorySearcher
 $searcher.Filter = "(&(objectCategory=computer)(dNSHostName=$hostname))"
@@ -20,3 +20,4 @@ if ($result) {
 } else {
     Write-Host "No AD computer object found for ${hostname} (check spelling or AD membership)."
 }
+
